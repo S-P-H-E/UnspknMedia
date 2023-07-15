@@ -1,5 +1,5 @@
 import Profiles from '@/components/Profiles'
-import { BsYoutube, BsArrowDownShort } from 'react-icons/bs'
+import { BsCircleFill, BsArrowDownShort } from 'react-icons/bs'
 import { TiVideo } from 'react-icons/ti'
 import One from '@/public/Charlie.jpg'
 import Two from '@/public/Sphe.jpg'
@@ -22,18 +22,19 @@ export default function Home() {
 
       {/* Home */}
       <div className="mt-[80px] flex flex-col justify-center items-center w-full">
-        <div className=" text-lg border px-4 py-1 my-3 font-medium rounded-full flex justify-center items-center gap-2">
-          <BsYoutube />
-          Short Form Agency
+        <div className="bg-[#242424] text-lg px-4 py-1 my-3 font-medium rounded-full flex justify-center items-center gap-2">
+          <BsCircleFill size={10} className='text-green-500 animate-pulse'/>
+          <p>Available for Work</p>
           </div>
         <h1 className="text-9xl text-center w-[1200px] font-medium mb-[4rem]">High quality social media content</h1>
-        <button className='flex bg-white text-black py-[16.5px] px-[24px] rounded-[8px] font-medium'>
+        <button className='flex bg-white text-black py-[16.5px] px-[24px] rounded-[8px] font-medium mb-96'>
           Choose Your Plan
         </button>
-        <button className='my-[150px] uppercase bg-[#0f1115] text-[#ffffffb8] flex justify-center items-center rounded-[8px] py-[12.5px] px-[16px] text-[16px] font-[400]'>
+
+        {/* <button className='my-[150px] uppercase bg-[#0f1115] text-[#ffffffb8] flex justify-center items-center rounded-[8px] py-[12.5px] px-[16px] text-[16px] font-[400]'>
           Scroll to learn more
           <BsArrowDownShort className='text-[#525356]' size={25}/>
-        </button>
+        </button> */}
       </div>
 
       {/* Team */}
